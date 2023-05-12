@@ -4,13 +4,30 @@
   "private": true,
   "description": "Проект «{{projectTitle}}» от HTML Academy",
   "scripts": {
-    "lint": "eslint src/"
+    "lint": "eslint src/",
+    "build": "webpack --mode production",
+    "start": "webpack serve --mode development --open"
   },
   "devDependencies": {
-    "eslint": "8.28.0",
-    "eslint-config-htmlacademy": "8.0.0"
+    "@babel/core": "^7.21.8",
+    "@babel/preset-env": "^7.21.5",
+    "babel-loader": "^9.1.2",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.7.3",
+    "eslint": "^8.28.0",
+    "eslint-config-htmlacademy": "^8.0.0",
+    "style-loader": "^3.3.2",
+    "ts-loader": "^9.4.2",
+    "typescript": "^5.0.4",
+    "webpack": "^5.82.1",
+    "webpack-cli": "^5.1.1",
+    "webpack-dev-server": "^4.15.0"
   },
   "engines": {
     "node": "18"
+  },
+  "dependencies": {
+    "inversify": "^6.0.1",
+    "reflect-metadata": "^0.1.13"
   }
 }
