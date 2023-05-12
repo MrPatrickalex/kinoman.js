@@ -1,4 +1,5 @@
 export default {
     Model: Symbol.for("Model"),
-    MainPresenter: Symbol.for("MainPresenter")
+    MainPresenter: Symbol.for("MainPresenter"),
+    BodyContainer: Symbol.for("BodyContainer")
 }

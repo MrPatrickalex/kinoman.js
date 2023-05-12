@@ -14,7 +14,7 @@ function createElement(template: string): Element {
   return newElement.firstElementChild;
 }
 
-function render(component: IView, container: HTMLElement, place: InsertPosition): void {
+function render(component: IView, container: Element, place: InsertPosition): void {
   container.insertAdjacentElement(place, component.element);
 }
 
